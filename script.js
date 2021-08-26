@@ -119,7 +119,7 @@ function forecast(cityid) {
       var tempK = response.list[((i + 1) * 8) - 1].main.temp;
       var tempF = (((tempK - 273.5) * 1.80) + 32).toFixed(2);
       var humidity = response.list[((i + 1) * 8) - 1].main.humidity;
-
+      
       $("#fDate" + i).html(date);
       $("#fImg" + i).html("<img src=" + iconurl + ">");
       $("#fTemp" + i).html(tempF + "&#8457");
